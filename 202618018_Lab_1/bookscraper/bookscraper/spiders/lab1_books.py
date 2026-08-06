@@ -26,9 +26,24 @@ class Lab1BooksSpider(scrapy.Spider):
         rating = response.css("p.star-rating::attr(class)").get()
         availability = response.css("p.availability::text").getall()
 
+        category = response.css("ul.breadcrumb li:nth-child(3) a::text").get()
+
+        description = response.css("#product_description + p::text").get()
+
+        upc = response.css("table.table.table-striped tr:nth-child(1) td::text").get()
+
+        reviews = response.css("table.table.table-striped tr:nth-child(7) td::text").get()
+
+        product_url = response.url
+
         yield {
             "Title": title,
+            "Category": category,
             "Price": price,
             "Rating": rating.replace("star-rating ", ""),
-            "Availability": " ".join(availability).strip()
-        }
+            "Availability": " ".join(availability).strip(),
+            "Description": description,
+            "UPC": upc,
+            "Number_of_Reviews": reviews,
+            "Product_URL": product_url
+}
