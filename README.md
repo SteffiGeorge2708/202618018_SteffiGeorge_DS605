@@ -1,2 +1,5 @@
 # 202618018_SteffiGeorge_DS605
-Steffi George 202618018 DS605 Fundamentals of Machine Learning
+Name: Steffi George 
+Student ID: 202618018 
+Subject Code: DS605 
+Subject: Fundamentals of Machine Learning
