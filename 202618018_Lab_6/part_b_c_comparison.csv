@@ -1,0 +1,3 @@
+Representation,Accuracy,Number of Features,Training Time (seconds),Prediction Time (seconds)
+CountVectorizer,0.9806763285024155,2974,1.0167386531829834,0.00835728645324707
+CountVectorizer + Bigrams,0.9777777777777777,60324,4.2481465339660645,0.005139589309692383
