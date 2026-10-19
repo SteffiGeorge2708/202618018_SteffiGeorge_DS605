@@ -1,0 +1,6 @@
+Method,Accuracy,Training and prediction time (s)
+Raw pixel nearest neighbor,0.9833333333333333,
+PCA nearest neighbor,0.9833333333333333,
+KNN,0.9833333333333333,9.3955
+Logistic Regression,0.975,0.4014
+SVM,1.0,0.0598
